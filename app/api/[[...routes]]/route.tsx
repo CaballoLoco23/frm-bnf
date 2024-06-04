@@ -21,16 +21,11 @@ app.frame('/', (c) => {
   
   return c.res({
     action: '/second',
-    image:"https://github.com/CaballoLoco23/frm-bnf/blob/master/public/img-frame1.png",
+    image: <img src="https://github.com/CaballoLoco23/frm-bnf/blob/master/public/img-frame1.png"/>,
     intents: [
-    <Button>siguiente</Button>,
-    
-    
-    
-      
-      
 
-      
+    <Button>siguiente</Button>,
+             
     ],
   })
 })
@@ -40,15 +35,10 @@ app.frame('/second', (c) => {
   
   return c.res({
     action: '/tercero',
-    image:"https://github.com/CaballoLoco23/frm-bnf/blob/master/public/img-frame2.png",
+    image: <img src="https://github.com/CaballoLoco23/frm-bnf/blob/master/public/img-frame2.png"/>,
     intents: [
      
       <Button>siguiente</Button>,
-      
-      
-      
-
-      
     ],
   })
 })
@@ -58,16 +48,13 @@ app.frame('/tercero', (c) => {
   
   return c.res({
     
-    image:"https://github.com/CaballoLoco23/frm-bnf/blob/master/public/img-frame3.png",
+    image:<img src="https://github.com/CaballoLoco23/frm-bnf/blob/master/public/img-frame3.png"/>,
     intents: [
       <Button.Link href='https://warpcast.com/~/channel/bnfarcaster'>Warpcast</Button.Link>,  
       <Button.Link href='https://www.youtube.com/@BuenasNochesFarcaster'>Youtube</Button.Link>,
     <Button.Reset>Reset</Button.Reset>,
-      
-      
-      
-
-      
+     
+          
     ],
   })
 })
